@@ -1,6 +1,5 @@
-import Link from 'next/link';
 import { client } from '../libs/client';
-import styles from '../styles/Home.module.scss'
+import styles from '../styles/Home.module.css'
 
 
 // SSGで取得
@@ -22,9 +21,9 @@ export default function Home({blog}) {
     <div className={styles.container}>
       {blog.map((blog) => (
         <li key={blog.id}>
-          <Link href={`blog/${blog.id}`}>
+          <link href={`blog/${blog.id}`}>
             <a href="">{blog.title}</a>
-          </Link>
+          </link>
         </li>
       ))}
     </div>
