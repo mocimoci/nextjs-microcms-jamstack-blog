@@ -1,3 +1,45 @@
+
+
+
+# microCMSでAPIを作成
+https://microcms.io/
+
+# sdkをインストール
+npm i microcms-js-sdk      
+
+
+# microCMSとNext.jsを結びつける準部
+1. libsというディレクトリを作成
+2. libsの中に、client.jsを作成
+3. 環境変数 (env) を収めるための.env.localを作成
+
+    .env	常に読み込み
+    .env.development	開発環境
+    .env.production	本番環境
+    .env.local	常に読み込み
+    .env.development.local	開発環境
+    .env.production.local	本番環境
+
+4. index.jsを編集
+5. pages/blog　フォルダを作成
+6. pagesフォルダの中に、blog/[id].jsを作成
+7. npm i sass
+8. 「styles/Home.module.css」を「styles/Home.module.scss」に変更
+9. pages/404.jsを作ると、オリジナルの404ページが作れる
+
+
+参考
+getStaticPaths
+https://nextjs.org/docs/basic-features/data-fetching/get-static-paths
+
+ReactのdangerouslySetInnerHTMLの危険性
+https://zenn.dev/mo_ri_regen/articles/react-cross-site-scripting
+
+XSSはサニタイジングで無効化
+https://zenn.dev/mo_ri_regen/articles/cross-site-scripting
+
+--------------------------------------------------------------
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -32,3 +74,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# nextjs-microcms-jamstack-blog
