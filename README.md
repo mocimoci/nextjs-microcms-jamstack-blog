@@ -34,8 +34,8 @@ npm i microcms-js-sdk
 14. 「Environment Variables」の「NAME」を 「API_KEY」に、「VALUE (WILL BE ENCRYPTED)」にAPI_KEYの内容を入れてADDを押す
 
 15. deployを押す
-
 16. 再deployしたい時 => Deployments
+エラーが解消されない時
 
 参考
 getStaticPaths
